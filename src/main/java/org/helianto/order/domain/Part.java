@@ -461,6 +461,8 @@ public class Part
 		setDocValue(command.getDocValue());
 		setTokenPrefix(command.getTokenPrefix());
 		setDocFlag(command.isDocFlag());
+		setChangeSummary(command.getChangeSummary());
+		setParsedContent(command.getParsedContent());
     	return this;
     }
 }
