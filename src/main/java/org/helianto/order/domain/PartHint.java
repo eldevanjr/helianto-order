@@ -217,6 +217,18 @@ public class PartHint
 	public void setPartId(Integer partId) {
 		this.partId = partId;
 	}
+	
+	/**
+	 * Merge
+	 * 
+	 * @param command
+	 */
+	public PartHint merge(PartHint command){
+		setContentAsString(command.getContentAsString());
+		setHintName(command.getHintName());
+		setHintType(command.getHintType());
+		return this;
+	}
 
 	/**
      * Implements <code>Comparable</code> interface using {@link #getHintCode()}.
